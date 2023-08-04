@@ -1,0 +1,21 @@
+<%- include("header") -%>
+
+<div>
+<form action="/signup" method="post">
+    <label for="name">Name</label>
+    <input id="name" type="text" name="name" value="<%= name %>">
+    <span id="name"><%= error1 %></span>
+    <label for="email">Email</label>
+    <input id="email" type="text" name="email" value="<%= email %>">
+    <span id="email"><%= error2 %></span>
+    <label for="password">Password</label>
+    <input id="password" type="password" name="password">
+    <span id="password"><%= error3 %></span>
+    <button type="submit">Signup</button>
+</form>
+<form action="/google/google-signup" method="post">
+    <button type="submit">Sign Up via Google</button>
+</form>
+</div>
+
+<%- include("footer") -%>

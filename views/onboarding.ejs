@@ -1,0 +1,10 @@
+<%- include("header") -%>
+
+<form action="/user/onboarding" method="post">
+    <label for="name">Name</label>
+    <input id="name" type="text" name="name" value="<%= name %>">
+    <span id="name"><%= error1 %></span>
+    <button type="submit">create account</button>
+</form>
+
+<%- include("footer") -%>

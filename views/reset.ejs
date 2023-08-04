@@ -1,0 +1,11 @@
+<%- include("header") -%>
+
+<form action="/reset" method="post">
+    <p><%= msg %></p>
+    <label for="email">Email</label>
+    <input id="email" type="text" name="email" value="<%= email %>">
+    <span id="name"><%= error2 %></span>
+    <button type="submit">send email</button>
+</form>
+
+<%- include("footer") -%>

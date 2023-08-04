@@ -1,0 +1,17 @@
+<%- include("header") -%>
+
+<form action="/login" method="post">
+    <label for="name">Username/Email</label>
+    <input id="name" type="text" name="name" value="<%= name %>">
+    <span id="name"><%= error1 %></span>
+    <label for="password">Password</label>
+    <input id="password" type="password" name="password">
+    <span id="password"><%= error3 %></span>
+    <a href="/reset">forget your password?</a>
+    <button type="submit">Login</button>
+</form>
+<form method="post" action="/google/google-signup"> 
+<button type="submit">Login via google</button>
+</form>
+
+<%- include("footer") -%>
